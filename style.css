@@ -11,6 +11,7 @@ body {
 	border-spacing: 15px;
 	padding: 10px;
 	list-style-type: none;
+	position: sticky;
 }
 .MMButtons,
 a:link {
