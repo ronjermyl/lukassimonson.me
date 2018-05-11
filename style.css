@@ -22,3 +22,12 @@ a:link {
 	width: 300px;
 	padding: 3px;
 }
+/*About me Page*/
+.dottedbox {
+	border-style: dotted;
+	border-color: black;
+
+}
+.blackbox {
+	border-style: solid;
+}
