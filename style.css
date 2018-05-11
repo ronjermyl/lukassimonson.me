@@ -1,3 +1,21 @@
 body {
-	background-color: grey;
+	background-color: lightgrey;
+}
+/* Page Selection Menu */
+.MM {
+	border-style: double;
+	border-color: black;
+	border-width: 5px;
+	border-radius: 5px;
+	border-collapse: separate;
+	border-spacing: 15px;
+	padding: 10px;
+	list-style-type: none;
+}
+.MMButtons,
+a:link {
+	text-decoration: none;
+}
+.MMButtons {
+	display: block;
 }
