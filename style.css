@@ -1,5 +1,8 @@
 body {
-	background-color: #4c4c4c;
+	/*background-image: url("./images/bkg.png");*/
+	background: radial-gradient(#5B5B5B, #676767);
+	height: 1000px;
+
 }
 /* Page Selection Menu */
 .MM {
@@ -22,9 +25,6 @@ body {
 	font-weight: bold;
 	font-size: 24px;
 	text-shadow: 2px 5px 5px lightgray;
-	float: right;
-	padding-right: 50px;
-	padding-left: 50px;
 }
 .MMLinks:link {
 	color: white;
@@ -32,9 +32,6 @@ body {
 	text-align: right;
 	font-weight: bold;
 	font-size: 24px;
-	float: right;
-	padding-right: 50px;
-	padding-left: 50px;
 }
 .MMLinks:visited {
 	color: white;
@@ -42,16 +39,30 @@ body {
 	text-align: right;
 	font-weight: bold;
 	font-size: 24px;
+}
+.BBorders {
+	padding: 2px 50px 2px 50px;
 	float: right;
-	padding-right: 50px;
-	padding-left: 50px;
+}
+/*Index*/
+.center {
+	text-align: center;
+	font-weight: bold;
+	font-size: 50px;
+	color: white
 }
 /*About me Page*/
-.dottedbox {
-	border-style: dotted;
-	border-color: black;
+.profpicborder {
+	border-style: solid;
+	border-color: white;
 
 }
-.blackbox {
-	border-style: solid;
+.white {
+	color: white;
 }
+.imgcenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
