@@ -1,26 +1,50 @@
 body {
-	background-color: lightgrey;
+	background-color: #4c4c4c;
 }
 /* Page Selection Menu */
 .MM {
 	border-style: double;
-	border-color: black;
-	border-width: 5px;
+	border-color: transparent;
+	border-bottom-color: white;
+	border-width: 10px;
 	border-radius: 5px;
 	border-collapse: separate;
 	border-spacing: 15px;
-	padding: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 	list-style-type: none;
-	position: sticky;
+	overflow: auto;
 }
-.MMButtons,
-a:link {
+.MMLinks:hover {
+	color: white;
 	text-decoration: none;
+	text-align: right;
+	font-weight: bold;
+	font-size: 24px;
+	text-shadow: 2px 5px 5px lightgray;
+	float: right;
+	padding-right: 50px;
+	padding-left: 50px;
 }
-.MMButtons {
-	display: block;
-	width: 300px;
-	padding: 3px;
+.MMLinks:link {
+	color: white;
+	text-decoration: none;
+	text-align: right;
+	font-weight: bold;
+	font-size: 24px;
+	float: right;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+.MMLinks:visited {
+	color: white;
+	text-decoration: none;
+	text-align: right;
+	font-weight: bold;
+	font-size: 24px;
+	float: right;
+	padding-right: 50px;
+	padding-left: 50px;
 }
 /*About me Page*/
 .dottedbox {
