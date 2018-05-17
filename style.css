@@ -65,4 +65,17 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 }
-
+.linklist {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 25px;
+	list-style: none;
+}
+.sublinklist {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	list-style: none;
+}
