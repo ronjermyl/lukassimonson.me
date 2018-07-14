@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gmod Gamemode?</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
+	<form class="MM">
+		<div class="BBorders"><a class="MMLinks" href="directory.html"><p>Directory</p></a></div>
+		<div class="BBorders"><a class="MMLinks" href="aboutme.html"><p>About Me</p></a></div>
+		<div class="BBorders"><a class="MMLinks" href="index.html"><p>Homepage</p></a></div>
+	</form>
+</head>
+</head>
+<body>
+	<div style="text-align: center; padding-top: 10px">
+		<button style="background-color: #FF8C00; padding: 15px 32px; float: center; border: none; border-radius: 8px; margin: 0 auto; color: white;" onclick="myFunction()"><strong>Gmod Gamemode</strong></button>
+		<p class="center" id="changeme"></p>
+	</div>
+	<script type="text/javascript">
+		list = ["TTT", "DarkRp", "Deathrun", "Murder", "Sandbox"]
+
+
+		function myFunction() {
+			var random;
+			random = Math.floor((Math.random() * list.length) + 0);
+	
+    		document.getElementById("changeme").innerHTML = list[random];
+		}
+	</script>
+</body>
+</html>
