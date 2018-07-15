@@ -86,3 +86,6 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
 }
+.version {
+   float: right;
+}
