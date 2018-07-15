@@ -86,6 +86,14 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
 }
+/*.versionpos {
+	position: relative;
+}*/
 .version {
    float: right;
+   color: white;
+   font-size: 16px;
+   position: absolute;
+   bottom: 0;
+   right: 0;
 }
