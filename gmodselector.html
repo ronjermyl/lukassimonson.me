@@ -3,7 +3,7 @@
 File: gmodselector.html
 Creator: Lukas Simonson
 Website Version: 1.0.0
-Page Version: 1.0.0
+Page Version: 1.0.1
 Last Updated: 7/15/18
 Usage: Selects a random Garys Mod Gamemode From a List
 -->
@@ -26,23 +26,12 @@ Usage: Selects a random Garys Mod Gamemode From a List
 <body>
 <!-- Random Gamemode Selector Button -->
 	<div style="text-align: center; padding-top: 10px">
-		<button style="background-color: #FF8C00; padding: 15px 32px; float: center; border: none; border-radius: 8px; margin: 0 auto; color: white;" onclick="myFunction()"><strong>Gmod Gamemode</strong></button>
+		<button class="rbutton" style="background-color: #FF8C00" onclick="button = Gmod; myFunction()"><strong>Gmod Gamemode</strong></button>
 		<p class="center" id="changeme"></p>
 	</div>
-<!-- Random Selector Inline javascript -->
-	<script type="text/javascript">
-// List
-		list = ["TTT", "DarkRp", "Deathrun", "Murder", "Sandbox"]
-
-// Random Selector Function
-		function myFunction() {
-			var random;
-			random = Math.floor((Math.random() * list.length) + 0);
-	
-    		document.getElementById("changeme").innerHTML = list[random];
-		}
-	</script>
+<!-- JS Script Call -->
+	<script src="random.js"></script>
 <!-- Set Version -->
-<div class="version">V: 1.0.0</div>
+<div class="version">V: 1.0.1</div>
 </body>
 </html>

@@ -3,7 +3,7 @@
 File: OWRandom.html
 Creator: Lukas Simonson
 Website Version: 1.0.0
-Page Version: 1.0.0
+Page Version: 1.0.1
 Last Updated: 7/15/18
 Usage: Selects a Random Charactor out of the Roster of OVerwatch Heroes
 -->
@@ -26,22 +26,12 @@ Usage: Selects a Random Charactor out of the Roster of OVerwatch Heroes
 <body>
 <!-- Make Random Hero Select Button -->
 	<div style="text-align: center; padding-top: 10px">
-		<button style="background-color: #FF8C00; padding: 15px 32px; float: center; border: none; border-radius: 8px; margin: 0 auto; color: white;" onclick="myFunction()"><strong>Random Hero</strong></button>
+		<button class="rbutton" style="background-color: #FF8C00" onclick="button = Overwatch; myFunction()"><strong>Random Hero</strong></button>
 		<p class="center" id="changeme"></p>
 	</div>
-<!-- Inline Selector javascript -->
-	<script type="text/javascript">
-// List
-		list = ["Torbjörn", "Doomfist", "Genji", "McCree", "Pharah", "Reaper", "Soldier: 76", "Sombra", "Tracer", "Bastion", "Hanzo", "Junkrat", "Mei", "Widowmaker", "D.Va", "Orisa", "Reinhardt", "Roadhog", "Winston", "Zarya", "Ana", "Brigitte", "Lücio", "Mercy", "Moira", "Symmetra", "Zenyatta"]
-
-// Random Selector Function
-		function myFunction() {
-			var random;
-			random = Math.floor((Math.random() * list.length) + 0);
-	
-    		document.getElementById("changeme").innerHTML = list[random];
-		}
-	</script>
-	<div class="version">1.0.0</div>
+<!-- JS Script Call -->
+	<script src="random.js"></script>
+<!-- Version -->
+	<div class="version">1.0.1</div>
 </body>
 </html>
