@@ -3,7 +3,7 @@
 File: RGS.html
 Creator: Lukas Simonson
 Website Version: 1.0.0
-Page Version: 1.0.0
+Page Version: 1.2.0
 Last Updated: 7/15/18
 Usage: Selects a Random Game out of a list.
 -->
@@ -26,23 +26,36 @@ Usage: Selects a Random Game out of a list.
 <body>
 <!-- Make Random Game Selector Button -->
 	<div style="text-align: center; padding-top: 10px">
-		<button style="background-color: #39FF14; padding: 15px 32px; float: center; border: none; border-radius: 8px; margin: 0 auto; color: white;" onclick="myFunction()"><strong>Random Game!</strong></button>
+		<button style="background-color: #39FF14; padding: 15px 32px; float: center; border: none; border-radius: 8px; margin: 0 auto; color: white;" onclick="button = All; myFunction()"><strong>Random Game!</strong></button>
+		<p class="center" id="changeme"></p>
+	</div>
+<!-- Random Comp Game Selector Button -->
+	<div style="text-align: center; padding-top: 10px">
+		<button style="background-color: red; padding: 15px 32px; float: Left; border: none; border-radius: 8px; margin: 0 auto; color: white;" onclick="button = Comp; myFunction()"><strong>Competitve Game!</strong></button>
+		<p class="center" id="changeme"></p>
+	</div>
+<!-- Random Coop Game Selector Button -->
+	<div style="text-align: center; padding-top: 10px">
+		<button style="background-color: purple; padding: 15px 32px; float: right; border: none; border-radius: 8px; margin: 0 auto; color: white;" onclick="button = Coop; myFunction()"><strong>Co-op Game!</strong></button>
 		<p class="center" id="changeme"></p>
 	</div>
 <!-- Inline Selector javascript -->
 	<script type="text/javascript">
-// List
-		list = ["Overwatch", "Town of Salem", "Siege", "Rocket League", "Fortnite", "Castle Crashers", "CS:GO", "Saints Row", "Stick Fight", "Tabletop Simulator", "Terraria", "Heroes Of the Storm", "Killing Floor", "Left 4 Dead", "Unturned", "TF2", "Smite"]
+// Lists
+		var All = ["Overwatch", "Town of Salem", "Siege", "Rocket League", "Fortnite", "Castle Crashers", "CS:GO", "Saints Row", "Stick Fight", "Tabletop Simulator", "Terraria", "Heroes Of the Storm", "Killing Floor", "Left 4 Dead", "Unturned", "TF2", "Smite"]
+		var Comp = ["Overwatch", "CS:GO", "Siege", "Rocket League", "Fortnite", "Heroes of the Storm", "Smite", "TF2"]
+		var Coop = ["Castle Crashers", "Saints Row", "Terraria"]
+		var button = [""]
 
 // Random Selector Function
 		function myFunction() {
 			var random;
-			random = Math.floor((Math.random() * list.length) + 0);
+			random = Math.floor((Math.random() * button.length) + 0);
 	
-    		document.getElementById("changeme").innerHTML = list[random];
+    		document.getElementById("changeme").innerHTML = button[random];
 		}
 	</script>
 <!-- Set Version -->
-	<div class="version">V: 1.0.0</div>
+	<div class="version">V: 1.2.0</div>
 </body>
 </html>
