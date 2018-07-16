@@ -3,19 +3,19 @@
 File: RGS.html
 Creator: Lukas Simonson
 Website Version: 1.0.0
-Page Version: 1.2.0
+Page Version: 1.2.1
 Last Updated: 7/15/18
 Usage: Selects a Random Game out of a list.
 -->
 <html lang="en">
 <head>
-<!-- Set Styleshee / Set Meta -->
+<!-- Styleshee / Meta -->
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
-<!-- Set Title / Set Favicon -->
+<!-- Title / Favicon -->
 	<title>Random Game!</title>
 	<link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
-<!-- Set Header / Set Main Menu -->
+<!-- Header / Main Menu -->
 	<form class="MM">
 		<div class="BBorders"><a class="MMLinks" href="directory.html"><p>Directory</p></a></div>
 		<div class="BBorders"><a class="MMLinks" href="aboutme.html"><p>About Me</p></a></div>
@@ -24,20 +24,20 @@ Usage: Selects a Random Game out of a list.
 </head>
 </head>
 <body>
-<!-- Make Random Game Selector Button -->
-	<div style="text-align: center; padding-top: 10px">
-		<button style="background-color: #39FF14; padding: 15px 32px; float: center; border: none; border-radius: 8px; margin: 0 auto; color: white;" onclick="button = All; myFunction()"><strong>Random Game!</strong></button>
-		<p class="center" id="changeme"></p>
-	</div>
+  <div style="text-align: center">
 <!-- Random Comp Game Selector Button -->
-	<div style="text-align: center; padding-top: 10px">
-		<button style="background-color: red; padding: 15px 32px; float: Left; border: none; border-radius: 8px; margin: 0 auto; color: white;" onclick="button = Comp; myFunction()"><strong>Competitve Game!</strong></button>
-		<p class="center" id="changeme"></p>
-	</div>
+	  <div style="display: Inline-block; padding-top: 10px">
+		  <button class="rbutton" style="background-color: red;" onclick="button = Comp; myFunction()"><strong>Competitve Game!</strong></button>
+	  </div>
+<!-- Random Game Selector Button -->
+	  <div style="display: Inline-block; padding-top: 10px">
+		  <button class="rbutton" style="background-color: #39FF14;" onclick="button = All; myFunction()"><strong>Random Game!</strong></button>
+	  </div>
 <!-- Random Coop Game Selector Button -->
-	<div style="text-align: center; padding-top: 10px">
-		<button style="background-color: purple; padding: 15px 32px; float: right; border: none; border-radius: 8px; margin: 0 auto; color: white;" onclick="button = Coop; myFunction()"><strong>Co-op Game!</strong></button>
-		<p class="center" id="changeme"></p>
+	  <div style="display: Inline-block; padding-top: 10px">
+		  <button class="rbutton" style="background-color: purple;" onclick="button = Coop; myFunction()"><strong>Co-op Game!</strong></button>
+	  </div>
+	  <p class="center" id="changeme"></p>
 	</div>
 <!-- Inline Selector javascript -->
 	<script type="text/javascript">
@@ -56,6 +56,6 @@ Usage: Selects a Random Game out of a list.
 		}
 	</script>
 <!-- Set Version -->
-	<div class="version">V: 1.2.0</div>
+	<div class="version">V: 1.2.1</div>
 </body>
 </html>

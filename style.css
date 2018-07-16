@@ -97,3 +97,11 @@ body {
    bottom: 0;
    right: 0;
 }
+.rbutton {
+    padding: 15px 32px;
+    border: none;
+    border-radius: 8px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
