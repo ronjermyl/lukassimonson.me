@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html>
+<!--
+File: RGS.html
+Creator: Lukas Simonson
+Website Version: 1.0.0
+Page Version: 1.0.0
+Last Updated: 7/15/18
+Usage: Selects a Random Game out of a list.
+-->
+<html lang="en">
 <head>
-	<title>Random Game!</title>
+<!-- Set Styleshee / Set Meta -->
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
+<!-- Set Title / Set Favicon -->
+	<title>Random Game!</title>
 	<link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
+<!-- Set Header / Set Main Menu -->
 	<form class="MM">
 		<div class="BBorders"><a class="MMLinks" href="directory.html"><p>Directory</p></a></div>
 		<div class="BBorders"><a class="MMLinks" href="aboutme.html"><p>About Me</p></a></div>
@@ -13,14 +24,17 @@
 </head>
 </head>
 <body>
+<!-- Make Random Game Selector Button -->
 	<div style="text-align: center; padding-top: 10px">
 		<button style="background-color: #39FF14; padding: 15px 32px; float: center; border: none; border-radius: 8px; margin: 0 auto; color: white;" onclick="myFunction()"><strong>Random Game!</strong></button>
 		<p class="center" id="changeme"></p>
 	</div>
+<!-- Inline Selector javascript -->
 	<script type="text/javascript">
+// List
 		list = ["Overwatch", "Town of Salem", "Siege", "Rocket League", "Fortnite", "Castle Crashers", "CS:GO", "Saints Row", "Stick Fight", "Tabletop Simulator", "Terraria", "Heroes Of the Storm", "Killing Floor", "Left 4 Dead", "Unturned", "TF2", "Smite"]
 
-
+// Random Selector Function
 		function myFunction() {
 			var random;
 			random = Math.floor((Math.random() * list.length) + 0);
@@ -28,6 +42,7 @@
     		document.getElementById("changeme").innerHTML = list[random];
 		}
 	</script>
-	<div class="version">V: 1.2.1</div>
+<!-- Set Version -->
+	<div class="version">V: 1.0.0</div>
 </body>
 </html>
