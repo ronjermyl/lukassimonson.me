@@ -6,7 +6,7 @@
 //Usage: Runs a selector script
 
 // Lists
-var Gmod = ["TTT", "DarkRp", "Deathrun", "Murder", "Sandbox"]
+var Gmod = ["TTT", "DarkRp", "Deathrun", "Murder", "Sandbox", "Prop hunt"]
 var Overwatch = ["Torbjörn", "Doomfist", "Genji", "McCree", "Pharah", "Reaper", "Soldier: 76", "Sombra", "Tracer", "Bastion", "Hanzo", "Junkrat", "Mei", "Widowmaker", "D.Va", "Orisa", "Reinhardt", "Roadhog", "Winston", "Zarya", "Ana", "Brigitte", "Lücio", "Mercy", "Moira", "Symmetra", "Zenyatta"]
 var All = ["Overwatch", "Town of Salem", "Siege", "Rocket League", "Fortnite", "Castle Crashers", "CS:GO", "Saints Row", "Stick Fight", "Tabletop Simulator", "Terraria", "Heroes Of the Storm", "Killing Floor", "Left 4 Dead", "Unturned", "TF2", "Smite"]
 var Comp = ["Overwatch", "CS:GO", "Siege", "Rocket League", "Fortnite", "Heroes of the Storm", "Smite", "TF2"]
