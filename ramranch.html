@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <!--
-File: gmodselector.html
+File: ramranch.html
 Creator: Lukas Simonson
 Website Version: 1.0.1
 Page Version: 1.0.2
-Last Updated: 7/15/18
-Usage: Selects a random Garys Mod Gamemode From a List
+Last Updated: 9/5/18
+Usage: Rams your Ranch
 -->
 <html lang="en">
 <head>
@@ -24,11 +24,25 @@ Usage: Selects a random Garys Mod Gamemode From a List
 </head>
 </head>
 <body>
-<!-- Random Gamemode Selector Button -->
+<!-- Ram Ranch Button -->
 	<div style="text-align: center; padding-top: 10px">
-    <a href="https://www.youtube.com/watch?v=3WQeTpnYN2c"><button class="rbutton" style="background-color: Blue">RAM RANCH</button></a>
-		<p class="center" id="changeme"></p>
+    <button onclick="RamRanch()">RAM RANCH</button>
+    <p></p>
 	</div>
+	<div id="RR" style="text-align: center;">
+	  <iframe width="560" height="315" src="https://www.youtube.com/embed/3WQeTpnYN2c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	</div>
+<!-- Javascript -->
+<script type= "text/javascript">
+  function RamRanch() {
+    var x = document.getElementById("RR");
+    if (x.style.visibility === "visible") {
+        x.style.visibility = "hidden";
+    } else {
+        x.style.visibility = "visible";
+    }
+}
+</script>
 <!-- Set Version -->
 <div class="version">V: 1.0.2</div>
 </body>
